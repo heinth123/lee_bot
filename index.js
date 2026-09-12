@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-// Replace with your actual Telegram Bot Token from @BotFather
-const token = process.env.8377527666:AAHvqxN3BEWpVA5TiwXYRMOFataJmzQ6KWk;
+// Uses the token securely from Render's Environment Variables
+const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 // Store active intervals for each chat ID
